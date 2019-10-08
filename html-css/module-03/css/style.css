@@ -2,7 +2,7 @@
    
 font-size: 0;}
 
-.conteiner{
+.container{
     width: 900px;
     margin: 0 auto;
    
@@ -29,6 +29,7 @@ h2{
 
 h3{
     margin: 0;
+    padding: 0;
     font-family: 'Playfair Display', serif;
     font-size: 30px;
     line-height: 36px;
