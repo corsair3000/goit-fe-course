@@ -1,6 +1,7 @@
 *{
    
-font-size: 0;}
+font-size: 0;
+}
 
 .container{
     width: 900px;
@@ -36,6 +37,13 @@ h3{
     color: #626262;
     padding-bottom: 36px;
 }
+
+.h3_box1{
+    /* white-space:nowrap; */
+    letter-spacing:-0.3px;
+}
+
+
 .page-nav{
     padding: 72px 0 98px 0;
 }
@@ -55,7 +63,7 @@ h3{
 
 
 
-.menu li a{
+.menu_link{
     font-family: 'Playfair Display', serif;
     line-height: 24px;
     font-size: 14px;
@@ -65,17 +73,21 @@ h3{
     display: block;
    
             }
- .menu a:hover {color:#03a9f4;}
 
- .box2,.box4,.box6, .box1, .box3, .box5
+ .menu_link:hover {
+     color:#03a9f4;
+    }
+
+ .box
  { 
-    width: 420px;
-    display: inline-block;
-} 
+     display: inline-block;
+     width: 420px;
     
-
+} 
+   
 .box1, .box3, .box5 
     {
+
         margin-right: 60px; 
     }
 
@@ -83,8 +95,6 @@ h3{
     {
     margin-top: 130px;
     }
- 
-
 
 .button{
 
@@ -104,7 +114,6 @@ h3{
     margin-top: 52px;
 }
 .button:hover{
-    color:#03a9f4;
+    color:white;
+    background-color: #626262;
 }
-
-
