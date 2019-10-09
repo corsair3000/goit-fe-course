@@ -96,32 +96,20 @@ h3{
     margin-top: 130px;
     }
 
-.button{
-
-    text-decoration: none;
+.container_button{ text-align: center}
+.btn{
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    line-height:calc(24/20);
     color: #626262;
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-    width: 164px;
-    height: 60px;
-    margin: 0 auto;
-    border: 1px solid #626262;
-    padding-top: 18px; 
-    margin-top: 52px;
-}
-/* .button:hover{
-    color:white;
-    background-color: #626262;
-} */
-
-.btn{
-    font-size: 20px;
+    line-height:calc(24/20);
     background-color: transparent;
     border: 1px solid #626262;
-    cursor: pointer;
-
+    padding: 17px 32px;
+    margin-top: 52px;
 }
+.btn:active {
+    background:#d3d3d3;
+}
+.btn:focus{
+        outline:none;
+} 
