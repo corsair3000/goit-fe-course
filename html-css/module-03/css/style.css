@@ -12,7 +12,7 @@ p{
     margin: 0;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
     color: #626262;
 
 }
@@ -21,7 +21,7 @@ h2{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
-    line-height: 17px;
+    line-height: calc(17/14);
     color: #b4ad9e;
     text-transform: uppercase;
     font-weight: 300;
@@ -33,13 +33,12 @@ h3{
     padding: 0;
     font-family: 'Playfair Display', serif;
     font-size: 30px;
-    line-height: 36px;
+    line-height: calc(36/30);
     color: #626262;
     padding-bottom: 36px;
 }
 
 .h3_box1{
-    /* white-space:nowrap; */
     letter-spacing:-0.3px;
 }
 
@@ -65,7 +64,7 @@ h3{
 
 .menu_link{
     font-family: 'Playfair Display', serif;
-    line-height: 24px;
+    line-height: calc(24/14);
     font-size: 14px;
     color: #626262;
     text-transform: uppercase;
@@ -82,6 +81,7 @@ h3{
  { 
      display: inline-block;
      width: 420px;
+     vertical-align: top;
     
 } 
    
@@ -101,7 +101,7 @@ h3{
     text-decoration: none;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    line-height: 24px;
+    line-height:calc(24/20);
     color: #626262;
     display: block;
     text-align: center;
@@ -113,7 +113,15 @@ h3{
     padding-top: 18px; 
     margin-top: 52px;
 }
-.button:hover{
+/* .button:hover{
     color:white;
     background-color: #626262;
+} */
+
+.btn{
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #626262;
+    cursor: pointer;
+
 }
