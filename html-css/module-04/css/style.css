@@ -1,4 +1,4 @@
-*{outline: 1px solid red;}
+/* *{outline: 1px solid red;} */
 /* html{font-size: 62.5%;} */
 
 /* .a1{
@@ -13,6 +13,7 @@
 .hed1{
 
 width: 400px;
+margin-bottom: 200px;
 
 
 }
@@ -31,4 +32,27 @@ ul::after{
     content: '';
     clear:both;
 
+}
+
+
+.tb{
+   background:black;
+   color:black;
+   margin-left: 50px;
+}
+.tb tr {
+/* border: 1px solid black; */
+background: lime;
+text-align: center;
+}
+
+#th1{
+    background: coral;
+}
+
+.tb2{
+    border:1px solid black;
+    margin: 100px;
+    font-size: 1.5rem;
+    /* margin-top: 150px; */
 }
