@@ -1,0 +1,34 @@
+*{outline: 1px solid red;}
+/* html{font-size: 62.5%;} */
+
+/* .a1{
+    font-size: 1rem;
+}
+.a2{ font-size: 10px;
+} */
+*{
+    padding: 0;
+    margin: 0;
+}
+.hed1{
+
+width: 400px;
+
+
+}
+ul{
+    width: 300px;
+    list-style: none;
+    background: lightblue;
+}
+li{
+    float: right;
+    font-size: calc(24/16);
+}
+
+ul::after{
+    display: table;
+    content: '';
+    clear:both;
+
+}
