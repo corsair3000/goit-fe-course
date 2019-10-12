@@ -1,0 +1,144 @@
+html{font-size: 16px;}
+.container{
+    padding: 0;
+    margin: 0;
+    width: 1170px;
+    background: lightyellow;
+    margin: 0 auto;
+    /* max-width: 100%; */
+}
+/* STYLE FOR LOGO */
+.logo{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: calc(48/32);
+  margin: 0;
+  float: left;
+  text-transform: uppercase;
+  color: #555252;
+  font-size: 1.875rem;
+  padding-left: 1.75rem; 
+  padding-top: 2rem;
+  
+}
+
+.logo::before{
+  content:"m";
+  font-weight: 600;
+  color:#1abc9c;
+}
+
+             /* STYLE FOR NAVIGATION*/
+             .menu-list{
+               margin: 0;
+               text-transform: uppercase;
+  }
+
+.menu-item a{
+  font-family: 'Open Sans', sans-serif; 
+  color:#0f0101;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: calc(14/11);
+}
+
+  .menu-item{
+  float: right;
+  list-style: none;
+  padding: 2.7rem 1.8rem;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-item a:hover{color:#1abc9c;}
+
+/* STYLE FOR H2 FEATURED PRODUCT */
+.style_h2{
+  margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     color: #515151;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 3rem;
+     line-height: calc(58/48);
+     font-weight: 600;
+     padding-top: 3.7rem;
+     
+    }
+
+    .style_h2::after
+{
+  padding: 0;
+  margin: 0;
+  content: "";
+  display:block;
+    width: 10.25rem;
+    margin:auto; 
+    margin-top: 1.6rem;
+    border-bottom:  0.44rem solid red;
+}
+
+/*  STYLE FOR  featured products*/
+
+.name,.price{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: calc(32/18);
+  padding: 0.25rem 0.75rem 0 0.87rem;
+}
+.name{
+  float: left;
+}
+.price{
+  float: right;
+}
+
+
+  .prod_name{
+    margin: 0;
+    width: 255px;
+    height: 40px;
+    background: linear-gradient(to right, #323232 0%, #323232 78.8%, #8c8c8c 78.8%, #8c8c8c 100% );
+}
+
+.box::before{
+  content: '';
+  display: block;
+  background-color: #e9f0fd;
+  height: 282px;
+  width: 255px;
+  background-image: url('../img/shoes.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clearfix::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.box{
+  float: left;
+  margin-left: 30px;
+  margin-top: 92px;
+
+}
+.box:nth-last-child(-n+4)
+{
+  margin-top: 30px;
+}
+
+.box:hover>.prod_name{
+   background: linear-gradient(to right, #1abc9c 0%, #1abc9c 78.8%, #7fd9c7 78.8%, #7fd9c7 100% );
+
+}
