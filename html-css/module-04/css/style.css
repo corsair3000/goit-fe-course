@@ -1,11 +1,10 @@
 html{font-size: 16px;}
+
 .container{
     padding: 0;
     margin: 0;
     width: 1170px;
-    /* background: lightyellow; */
     margin: 0 auto;
-    /* max-width: 100%; */
 }
 /* STYLE FOR LOGO */
 .logo{
@@ -46,16 +45,15 @@ html{font-size: 16px;}
   .menu-item{
   float: right;
   list-style: none;
-  padding: 2.7rem 1.8rem;
+  padding: 2.7rem 1.8rem 6.5rem 1.8rem ;
 }
-
-
 
 .menu-item a:hover{color:#1abc9c;}
 
+
 /* STYLE FOR H2 FEATURED PRODUCT */
 .style_h2{
-  margin: 0;
+     margin: 0;
      padding: 0;
      font-family: 'Roboto', sans-serif;
      color: #515151;
@@ -64,19 +62,18 @@ html{font-size: 16px;}
      font-size: 3rem;
      line-height: calc(58/48);
      font-weight: 600;
-     padding-top: 3.7rem;
      
     }
 
-    .style_h2::after
-{
-  padding: 0;
-  margin: 0;
-  content: "";
-  display:block;
+    .style_h2::after{
+    padding: 0;
+    margin: 0;
+    content: "";
+    display:block;
     width: 10.25rem;
     margin:auto; 
     margin-top: 1.18rem;
+    margin-bottom: 62px;
     border-bottom:  0.44rem solid #4ec6ab;
 }
 
@@ -125,11 +122,6 @@ html{font-size: 16px;}
 .box{
   float: left;
   margin-left: 30px;
-  margin-top: 92px;
-
-}
-.box:nth-last-child(-n+4)
-{
   margin-top: 30px;
 }
 
@@ -174,10 +166,13 @@ html{font-size: 16px;}
               /*  STYLE FOR  LATEST NEWS*/
 
 .section-blog h2{   
+  margin-bottom: 0;
   padding-top: 6.25rem;
 }
+.section-blog h2::after{
+  margin-bottom: 0;}
 
-.blog{
+  .blog{
   width: 350px;
   float: left;
   margin-left: 30px;
@@ -199,7 +194,7 @@ html{font-size: 16px;}
 .h3-blog::after{
   padding: 0;
   margin: 0;
-  content: "";
+  content: '';
   display:block;
     width: 8.5rem;
    margin-top: 0.5rem;
