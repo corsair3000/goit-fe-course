@@ -1,7 +1,4 @@
-*{
-   
-font-size: 0;
-}
+html{font-size: 16px;}
 
 .container{
     width: 900px;
@@ -11,7 +8,7 @@ font-size: 0;
 p{
     margin: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: calc(24/14);
     color: #626262;
 
@@ -20,22 +17,22 @@ p{
 h2{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: calc(17/14);
     color: #b4ad9e;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 31px 0 26px 0;
+    padding: 1.94rem 0 1.625rem 0;
 }
 
 h3{
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: calc(36/30);
     color: #626262;
-    padding-bottom: 36px;
+    padding-bottom: 2.25rem;
 }
 
 .h3_box1{
@@ -44,28 +41,28 @@ h3{
 
 
 .page-nav{
-    padding: 72px 0 98px 0;
+    padding: 4.5rem 0 6.13rem 0;
 }
 .menu{ 
      padding: 0;
      margin: 0;
      list-style: none;
      text-align: center;
-        }
-           
-.menu li{
-        display: inline-block;
-        margin-right:  100px;
-       
+    }
+    
+    .menu_list{
+       display: inline-block;
+       padding-right: 6.25rem;
+       /* padding-left:   */
 }
-.menu li:last-child{margin-right: 0;}
+.menu_list:first-child{padding-left: 6.25rem;}
 
 
 
 .menu_link{
     font-family: 'Playfair Display', serif;
     line-height: calc(24/14);
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
@@ -88,24 +85,25 @@ h3{
 .box1, .box3, .box5 
     {
 
-        margin-right: 60px; 
+        margin-right: 3.5rem; 
     }
 
 .box3,.box4,.box5,.box6
     {
-    margin-top: 130px;
+    margin-top: 8.13rem;
     }
 
 .container_button{ text-align: center}
 .btn{
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #626262;
     line-height:calc(24/20);
     background-color: transparent;
-    border: 1px solid #626262;
-    padding: 17px 32px;
-    margin-top: 52px;
+    border: 0.063rem solid #626262;
+    padding: 1rem 2rem;
+    margin-top: 3.25rem;
+    margin-bottom: 1rem;
 }
 .btn:active {
     background:#d3d3d3;
