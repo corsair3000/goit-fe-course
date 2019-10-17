@@ -7,7 +7,7 @@ html{font-size: 16px;}
     margin: 0 auto;
 }
                                           /* STYLE FOR LOGO */
-.logo{
+/* .logo{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: calc(48/32);
@@ -25,15 +25,25 @@ html{font-size: 16px;}
   content:"m";
   font-weight: 600;
   color:#1abc9c;
+} */
+
+.logo{
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 21px;
+  width: 78px;
+  margin-left: 30px;
+  margin-top: 2.5rem;
 }
 
                                     /* STYLE FOR NAVIGATION*/
-.menu-list{
+.menu{
     margin: 0;
     text-transform: uppercase;
   }
 
-.menu-item a{
+.menu-list-item{
   font-family: 'Open Sans', sans-serif; 
   color:#0f0101;
   text-decoration: none;
@@ -42,13 +52,13 @@ html{font-size: 16px;}
   line-height: calc(14/11);
 }
 
-  .menu-item{
+  .menu-list{
   float: right;
   list-style: none;
-  padding: 2.7rem 1.8rem 6.5rem 1.8rem ;
+  padding: 2.7rem 1.8rem 6.25rem 1.8rem ;
 }
 
-.menu-item a:hover{color:#1abc9c;}
+.menu-list-item:hover{color:#1abc9c;}
 
 
                             /* STYLE FOR H2 FEATURED PRODUCT */
