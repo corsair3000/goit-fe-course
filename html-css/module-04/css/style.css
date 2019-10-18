@@ -7,26 +7,6 @@ html{font-size: 16px;}
     margin: 0 auto;
 }
                                           /* STYLE FOR LOGO */
-/* .logo{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  line-height: calc(48/32);
-  margin: 0;
-  float: left;
-  text-transform: uppercase;
-  color: #555252;
-  font-size: 1.875rem;
-  padding-left: 1.75rem; 
-  padding-top: 2rem;
-  
-}
-
-.logo::before{
-  content:"m";
-  font-weight: 600;
-  color:#1abc9c;
-} */
-
 .logo{
   float: left;
   padding: 0;
@@ -75,7 +55,7 @@ html{font-size: 16px;}
      
     }
 
-    .style_h2::after{
+.style_h2::after{
     padding: 0;
     margin: 0;
     content: "";
@@ -106,26 +86,13 @@ html{font-size: 16px;}
   float: right;
 }
 
-  .prod_name{
-    margin: 0;
-    width: 255px;
-    height: 40px;
-    background: linear-gradient(to right, #323232 0%, #323232 78.8%, #8c8c8c 78.8%, #8c8c8c 100% );
-}
-
-.box::before{
-  content: '';
-  display: block;
-  background-color: #e9f0fd;
-  height: 282px;
+.box-content{
   width: 255px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.clearfix::after{
-  display: table;
-  content: '';
-  clear: both;
+  height: 282px;
+  background-color: #e9f0fd; 
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .box{
@@ -134,42 +101,23 @@ html{font-size: 16px;}
   margin-top: 1.875rem;
 }
 
+  .prod_name{
+    margin: 0;
+    width: 255px;
+    height: 40px;
+    background: linear-gradient(to right, #323232 0%, #323232 78.8%, #8c8c8c 78.8%, #8c8c8c 100% );
+}
+
+.clearfix::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+
 .box:hover>.prod_name{
    background: linear-gradient(to right, #1abc9c 0%, #1abc9c 78.8%, #7fd9c7 78.8%, #7fd9c7 100% );
 
-}
-
-.prod1::before{
-  content: '';
-  background-image: url('../img/shoes.png');
-}
-.prod2::before{
-  content: '';
-  background-image: url('../img/product2.png');
-}
-.prod3::before{
-  content: '';
-  background-image: url('../img/product3.png');
-}
-.prod4::before{
-  content: '';
-  background-image: url('../img/product4.png');
-}
-.prod5::before{
-  content: '';
-  background-image: url('../img/product5.png');
-}
-.prod6::before{
-  content: '';
-  background-image: url('../img/product6.png');
-}
-.prod7::before{
-  content: '';
-  background-image: url('../img/product7.png');
-}
-.prod8::before{
-  content: '';
-  background-image: url('../img/product8.png');
 }
           
                                    /*  STYLE FOR  LATEST NEWS*/
@@ -221,8 +169,6 @@ html{font-size: 16px;}
   margin-top: 1.44rem;
   letter-spacing:-0.3px
 }
-
-
 
                                        /* STYLE FOR BUTTON */
 .btn{
