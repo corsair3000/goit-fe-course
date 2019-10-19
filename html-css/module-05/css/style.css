@@ -1,10 +1,24 @@
 html{font-size: 16px;}
 
-.container{
-    padding: 0;
+/* img{
+  display: block;
+max-width: 100%;
+height: auto;
+} */
+.container-header{
+  padding: 0;
     margin: 0;
     width: 1170px;
     margin: 0 auto;
+    /* background-color: beige; */
+
+}
+.container{
+    padding: 0;
+    margin: 0;
+    width: 1600px;
+    margin: 0 auto;
+    background-color: beige;
 }
                                           /* STYLE FOR LOGO */
 .logo{
@@ -31,14 +45,122 @@ html{font-size: 16px;}
   font-weight: 600;
   line-height: calc(14/11);
 }
-
   .menu-list{
   float: right;
   list-style: none;
-  padding: 2.7rem 1.8rem 6.25rem 1.8rem ;
+  padding: 2.7rem 1.8rem 2.25rem 1.8rem ;
+}
+.menu-list-item:hover{color:#1abc9c;}
+
+
+ /* SLIDERS */
+.sliders{
+position: relative;
+  margin: 0;
+  padding: 0;
+  width: 1600px;
+  height: 700px;
+  margin-bottom: 6rem;
 }
 
-.menu-list-item:hover{color:#1abc9c;}
+.bg-color_for_image{
+  position: absolute;
+  width: 1600px;
+  height: 700px;
+  background-color: black;
+z-index: 10;
+opacity: 0.52;
+}
+
+/* -----------------BUTTONS------------------ */
+/* .buttons{position: absolute;} */
+.slider-control{
+  padding: 0;
+  position:absolute;
+  border: none;
+  background-color: #1abc9c;
+  width: 104px;
+  height: 104px;
+  top:50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 64px;
+  }
+.control-left{
+  left:230px;
+  z-index: 100;
+  opacity: 0.65;
+}
+.control-right{
+  right:230px;
+  z-index: 100;
+  opacity: 0.5;
+}
+.control-left:hover{opacity: 1;}
+.control-right:hover{opacity: 1;}
+.slider-control:focus{outline:none;}
+
+/* -------------------------SLIDER UL----------------- */
+.slider-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+.slider-item{
+  position: relative; 
+  }
+ 
+
+.slider-img{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+
+
+  }
+  .slider-titel1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+    font-size: 60px;
+    line-height: calc(82/60);
+    top: 40%;
+    left:26.5%;
+    z-index: 101;
+      }
+
+      .slider-titel2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:#ffffff;
+    font-size: 24px;
+    line-height: calc(54/24);
+    left:26.5%;
+    top: 51.7%;
+    z-index: 101;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                             /* STYLE FOR H2 FEATURED PRODUCT */
@@ -68,6 +190,11 @@ html{font-size: 16px;}
 }
 
                                   /*  STYLE FOR  featured products*/
+
+.all_item{
+}
+
+
 
 .name,.price{
   font-family: 'Roboto', sans-serif;
@@ -115,79 +242,9 @@ html{font-size: 16px;}
 }
 
 
-.box:hover>.prod_name{
+.box:hover .prod_name{
    background: linear-gradient(to right, #1abc9c 0%, #1abc9c 78.8%, #7fd9c7 78.8%, #7fd9c7 100% );
 
 }
           
-                                   /*  STYLE FOR  LATEST NEWS*/
-
-.section-blog h2{   
-  margin-bottom: 0;
-  padding-top: 6.25rem;
-}
-.section-blog h2::after{
-  margin-bottom: 0;}
-
-  .blog{
-  width: 350px;
-  float: left;
-  margin-left: 1.875rem;
-  margin-top: 5.06rem;
-}       
-
-.h3-blog
-{
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  color: #555252;
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: calc(26/18);
-  margin-top: 0.31rem;
-  
-}
-.h3-blog::after{
-  padding: 0;
-  margin: 0;
-  content: '';
-  display:block;
-    width: 8.5rem;
-   margin-top: 0.5rem;
-    border-bottom:  0.19rem solid #4ec6ab;
-    }
-.p-blog
-{
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  font-size: 0.88rem;
-  line-height: calc(26/14);
-  margin-bottom: 0.81rem;
-  margin-top: 1.44rem;
-  letter-spacing:-0.3px
-}
-
-                                       /* STYLE FOR BUTTON */
-.btn{
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  color: #ffffff;
-  line-height:calc(26/16);
-  background-color: #4ec6ab;
-  border: none;
-  padding: 0.81rem 2.5rem;
-  border-radius: 0.25rem;
-  margin-bottom: 5rem;
-
-}
-.btn:focus{
-  outline:none;
-} 
-.btn:active {
-  background:#7fd9c7;
-}
+ 
