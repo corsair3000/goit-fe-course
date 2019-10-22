@@ -20,18 +20,18 @@ html{font-size: 16px;}
     width: 1600px;
     margin: 0 auto;
 }
-                                          /* STYLE FOR LOGO */
+ /* -------------------------------------------STYLE FOR LOGO----------------------------------- */
 .logo{
   float: left;
   padding: 0;
   margin: 0;
   height: 21px;
   width: 78px;
-  margin-left: 30px;
+  margin-left: 1.875rem;
   margin-top: 2.5rem;
 }
 
-                                    /* STYLE FOR NAVIGATION*/
+ /*----------------------------------------- STYLE FOR NAVIGATION-------------------------*/
 .menu{
     margin: 0;
     text-transform: uppercase;
@@ -55,12 +55,11 @@ html{font-size: 16px;}
 
  /* ------------------------------------SLIDERS-CONTAINER------------------------------- */
 .sliders{
-position: relative;
+  position: relative;
   margin: 0;
   padding: 0;
   width: 1600px;
   height: 700px;
-  /* margin-bottom: 6rem; */
 
 }
 
@@ -84,10 +83,10 @@ opacity: 0.52;
   top:50%;
   transform: translateY(-50%);
   color: #ffffff;
-  font-size: 64px;
+  font-size: 4rem;
   }
 .control-left{
-padding-right: 4px;
+padding-right: 0.25rem;
   left:230px;
   z-index: 100;
   opacity: 0.65;
@@ -97,27 +96,24 @@ padding-right: 4px;
   z-index: 100;
   opacity: 0.65;
 }
-.control-left:hover{opacity: 1;}
-.control-right:hover{opacity: 1;}
+.control-left:hover{opacity: 1; cursor: pointer;}
+.control-right:hover{opacity: 1; cursor: pointer;}
 
 /* ------------------------------------SLIDER LIST ( UL )----------------- */
 .slider-list{
   margin: 0;
   padding: 0;
   list-style: none;
-  
-}
+  }
+
 .slider-item{
   position: relative; 
   }
  
-
 .slider-img{
     height: 700px;
     width: 100%;
     object-fit: cover;
-
-
   }
   /* -------------------------------------title for sliders------------------- */
   .slider-title{
@@ -136,19 +132,18 @@ padding-right: 4px;
     margin: 0;
     padding: 0;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: calc(82/60);
       }
       .slider-titel2{
         margin: 0;
         padding: 0;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: calc(54/24);
       }
 
-
-                            /* STYLE FOR H2 FEATURED PRODUCT */
+/* ------------------------------------STYLE FOR H2 NEW COLECTION --------------------------*/
 .style_h2{
   position: absolute;
      margin: 0;
@@ -177,10 +172,10 @@ padding-right: 4px;
     border-bottom:  0.44rem solid #4ec6ab;
 }
 
-                                  /*  STYLE FOR  featured products*/
+  /* --------------------------------- STYLE FOR  NEW COLECTION-----------------------------*/
 
 .container_products{
-  position: relative;                /*delete can*/
+  position: relative;               
   background-color: #e9f0fd;
   width: 1600px;
   height: 676px;
@@ -208,21 +203,21 @@ padding-right: 4px;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: calc(32/18);
-  padding-top: 0.25rem;
-  padding-left: 10px;
-  display: inline-block;
-}
-.box-name-price{
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    height: 40px;
-    width: 255px;
-    background: linear-gradient(to right, #323232 0%, #323232 78.8%, #8c8c8c 78.8%, #8c8c8c 100% );
+  padding-top: 0.3rem;
+  
 }
 
-.price{
-  }
+.name{float: left; padding-left: 0.625rem;}
+.price{float: right; padding-right: 0.625rem;}
+
+.box-name-price{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 40px;
+  width: 255px;
+  background: linear-gradient(to right, #323232 0%, #323232 78.8%, #8c8c8c 78.8%, #8c8c8c 100% );
+}
   
   .box2{
     left:530px;
@@ -236,7 +231,7 @@ padding-right: 4px;
   .overlay
   {
         position: absolute;
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
         top: 10px;
         left: 10px;
         width: 235px;
@@ -254,26 +249,24 @@ padding-right: 4px;
                display: none;
                width: 50px;
                height: 50px;
-               transition: 0.3s ease-in-out;
-
+               transition: 0.2s ease-in-out;
       }
       
       .b1{
         left:45px;
-        font-size: 30px;
+        font-size: 1.875rem;
         padding: 0;
       }   
       
       .b2{
         left:104px;
-        font-size: 30px;
+        font-size: 1.875rem;
         padding: 0;
-        
-      }  
+          }  
       
       .b3{
         left:160px;
-        font-size: 30px;
+        font-size: 1.875rem;
         padding: 0;
       } 
       
@@ -281,24 +274,27 @@ padding-right: 4px;
          width: 166px;
         top: 147px;
         left:45px;
-        font-size: 30px;
-        padding: 6px 5px;
+        font-size: 1.875rem;
+        padding: 0.375rem 0.31rem;
         text-align: left;
-        background-color: #323232;
+        background-color: #323232;    
+        overflow: hidden;
       }
-      .add-to-cart{padding: 5px;
+
+      .add-to-cart{padding: 0.31rem;
         font-family: 'Open Sans', sans-serif;
         vertical-align: top;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
-        text-transform: uppercase;}
+        text-transform: uppercase;
+      }
 
-                                                   
+ /*------------------------------------ H O V E R S------------------------------------------------- */
 
-.b1:hover {background-color: #1abc9c;}
-.b2:hover {background-color: #1abc9c;}
-.b3:hover {background-color: #1abc9c;}
-.b4:hover {background-color: #1abc9c;}
+.b1:hover {background-color: #1abc9c; cursor: pointer;}
+.b2:hover {background-color: #1abc9c; cursor: pointer;}
+.b3:hover {background-color: #1abc9c; cursor: pointer;}
+.b4:hover {background-color: #1abc9c; cursor: pointer;}
 .box:hover .overlay {opacity: 0.55;}
 .box:hover .container-button {display: block}
 .box:hover .box-name-price{
@@ -308,7 +304,21 @@ padding-right: 4px;
 
 /* -------------------------------footer-------------------------- */
 .foot{
+  position: relative;
   height: 88px;
   background-color: #323232;
 }
-          
+.footer-info{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif; 
+  color:#ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: calc(28/16);
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  }
+  #themengraph{
+    color: #46bfa9;
+  }          
