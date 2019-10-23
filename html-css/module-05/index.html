@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <title>Home work _Module-05</title>
-    <!-- add fonts pe icon 7 stroke -->
     <link rel="stylesheet" href="css/animation.css" type="text/css" />
     <link rel="stylesheet" href="css/fontello.css" type="text/css" />
     <link rel="stylesheet" href="css/fontello-codes.css" type="text/css" />
@@ -21,7 +20,7 @@
 
 
 <body>
-    <!-- ---------------------------------- NAVIGATION------------------------------------------------------------ -->
+    <!-- -------------------- NAVIGATION-------------- -->
 
     <header class="container-header clearfix">
         <nav>
@@ -39,7 +38,8 @@
 
 
 <main class="container">
-        <!-- ----------------------------------------------S L I D E R S------------------------------------------------ -->
+
+        <!-- -------------------S L I D E R S----------------------- -->
 <section>
 
     <div class="sliders">
@@ -47,8 +47,9 @@
             <div class="bg-color_for_image"></div>
             
             <div class="buttons">
-            <button class="slider-control control-left icon-left-open-big" ></button>
-            <button class="slider-control control-right icon-right-open-big"></button>
+                    
+            <button class="slider-control control-left" ></button>
+            <button class="slider-control control-right"></button>
         </div>
            
         <div class="slider-title">
@@ -66,34 +67,38 @@
     </div>
     
 </section>
-<!-- ------------------------------------------------------SECTION featured products --------------------------------------- -->
+<!-- ------------------------SECTION featured products ------------------ -->
 <section class="container_products">
              <h2 class="style_h2">new collection</h2>
-        
-                    <div class="box box1">
-                           <div class="box-img">
-                                <img class="imgcont" src="img/img1.jpg" alt="shoes" width="255" height="282" >
-                           </div>
-                              
-                            <div class="overlay"></div>
-                                 
-                                <button class="container-button b1 icon-heart-empty"></button>
-                                <button class="container-button b2 icon-shuffle"></button>
-                                <button class="container-button b3  icon-clock"></button>
-                                <button class="container-button b4 icon-basket">
-                                    <span class="add-to-cart">
-                                        add to cart
-                                    </span>
-                                </button>
-                          
-                            <div class="box-name-price clearfix" >
-                               <p class="name">Blue Tshirt</p>
-                               <p class="price">$26</p>
-                            </div>
-                     </div>
+        <div class="container-cards clearfix">
+
+                <div class="prebox">
+                    <div class="box">
+                        <div class="box-img">
+                            <img class="imgcont" src="img/img1.jpg" alt="shoes" width="255" height="282" >
+                        </div>
+                        
+                        <div class="overlay"></div>
+                        
+                        <button class="container-button b1 icon-heart-empty"></button>
+                        <button class="container-button b2 icon-shuffle"></button>
+                        <button class="container-button b3  icon-clock"></button>
+                        <button class="container-button b4 icon-basket">
+                            <span class="add-to-cart">
+                                add to cart
+                            </span>
+                        </button>
+                        
+                        <div class="box-name-price clearfix" >
+                            <p class="name">Blue Tshirt</p>
+                            <p class="price">$26</p>
+                        </div>
+                    </div>
+                </div>
  
-                     <div class="box box2">
-                          
+
+                <div class="prebox">
+                     <div class="box">
                             <div class="box-img">
                                  <img class="imgcont" src="img/img2.jpg" alt="shoes" width="255" height="282" >
                             </div>
@@ -113,8 +118,10 @@
                                 <p class="price">$31</p>
                              </div>
                        </div>
-          
-                      <div class="box box3">
+                </div>
+
+                 <div class="prebox">
+                      <div class="box">
                           
                             <div class="box-img">
                                  <img class="imgcont" src="img/img3.jpg" alt="shoes" width="255" height="282" >
@@ -135,8 +142,10 @@
                                 <p class="price">$21</p>
                             </div>
                        </div>
-   
-                       <div class="box box4">
+                  </div>
+
+                 <div class="prebox">
+                       <div class="box">
                     
                             <div class="box-img">
                                  <img class="imgcont" src="img/img4.jpg" alt="shoes" width="255" height="282" >
@@ -157,20 +166,29 @@
                                 <p class="price">$56</p>
                              </div>
                       </div>
-    
+                 </div>
+
+     </div>
                
 </section>
 
-<!------------------------------------------------------ footer------------------------------------------------ -->
-        <footer class="foot">
-            <div class="footer-info">
-                <span>All Rights Reserved ©</span>
-                <span>Dokan | </span>
-                <span>Designed</span>
-                <span id="themengraph">ThemenGraph</span>
-            </div>
-        </footer>                            
-            
+<!------------------------- footer--------------- -->
+
 </main>
+
+<footer class="foot">
+    <div class="footer-info">
+        <span>All Rights Reserved ©</span>
+        <span>Dokan | </span>
+        <span>Designed</span>
+        <span id="themengraph">ThemenGraph</span>
+    </div>
+</footer>                            
+
+
+
+
+
+
 </body>
 </html>
