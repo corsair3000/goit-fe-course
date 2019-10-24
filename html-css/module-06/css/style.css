@@ -4,7 +4,6 @@ html{font-size: 16px;}
 *:focus{outline: none;}
 .container{
   padding: 0;
-  background-color: antiquewhite;
     margin: 0;
     width: 1200px;
     margin: 0 auto;
@@ -87,12 +86,11 @@ html{font-size: 16px;}
     width: 3.75rem;
     margin:auto; 
     margin-top: 2.44rem;
-    /* margin-bottom: 4.3rem; */
+    margin-bottom: 4rem;
     border-bottom:  0.19rem solid #f38181;
 }
 
-.service{
-  background-color: #f0fa6b;
+.service-container{
 }
 .servises{
   flex-basis: 1182px;
@@ -103,19 +101,95 @@ html{font-size: 16px;}
 }
 .cards{
   position: relative;
- 
+ min-height: 65px;
 flex-basis: 300px;
-padding-left: 40px;
+padding-left: 65px;
+padding-bottom: 65px;
 }
-
+.cards-h3{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: calc(17/14);
+  text-transform: uppercase;
+  color: #333333;
+}
+p{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+line-height: calc(24/15);
+color: #999999;
+}
 .cards-h3::before{
   position: absolute;
-  display: inline-block;
-  content: url(../img/ALARM.png);
   left:0;
+  /* display: inline-block; */
+  width: 35px;
+  height: 35px;
+  content: url(../img/ALARM.png);
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------TEAM------------------------- */
+
+.first_h2{
+  margin: 0;
+  padding: 0;
+}
+.describe-team{
+  display: block;
+  width: 945px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 93px;
+}
+.amaz-serveces::after{
+  content: "";
+  margin-bottom: 45px;
+}
+
+.team-cards{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 1200px;
+  min-height: 625px;
+}
+.title-card h4{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.title-card span {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.card img{
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+}
+.card:hover img{
+  transform: translate(-10px,-10px);
 }
 
 /* -------------------------------footer-------------------------- */
