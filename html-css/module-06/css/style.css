@@ -92,20 +92,31 @@ html{font-size: 16px;}
 }
 
 .service{
-  background-color: #b5e2f7;
+  background-color: #f0fa6b;
 }
 .servises{
   flex-basis: 1182px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   
 }
 .cards{
-flex-basis: 400px;
+  position: relative;
+ 
+flex-basis: 300px;
+padding-left: 40px;
 }
 
+.cards-h3::before{
+  position: absolute;
+  display: inline-block;
+  content: url(../img/ALARM.png);
+  left:0;
 
 
+
+}
 
 /* -------------------------------footer-------------------------- */
 .foot{
