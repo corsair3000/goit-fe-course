@@ -26,9 +26,7 @@ html{font-size: 16px;}
     list-style: none;
     flex-wrap: wrap;
   }
-  /* .menu-list{
-  } */
-  
+    
   .menu-list-item{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -37,21 +35,16 @@ html{font-size: 16px;}
     font-size: 0.875rem;
     font-weight: 400;
     line-height: calc(17/14);
-   
+    transition: 0.2s linear;
    }
 
 
   .menu-list-item:hover{
     color:#f38181;
-    border-bottom: 3px solid #f38181;
-    padding-bottom: 10px;
+    border-bottom: 0.088rem solid #f38181;
+    padding-bottom: 0.63rem;
   }
      
-
-
-
-
-
    
 /* ------------------------------------STYLE FOR H2 NEW COLECTION --------------------------*/
 .first_h2 {
@@ -62,7 +55,7 @@ html{font-size: 16px;}
   text-align: center;
   font-size: 1.5rem;
   line-height: calc(29/24);
-  padding-top: 100px;
+  padding-top: 6.25rem;
 
 }
 .style_h2{
@@ -90,8 +83,7 @@ html{font-size: 16px;}
     border-bottom:  0.19rem solid #f38181;
 }
 
-.service-container{
-}
+
 .servises{
   flex-basis: 1182px;
   display: flex;
@@ -103,8 +95,8 @@ html{font-size: 16px;}
   position: relative;
  min-height: 65px;
 flex-basis: 300px;
-padding-left: 65px;
-padding-bottom: 65px;
+padding-left: 4.06rem;
+padding-bottom: 4.06rem;
 }
 .cards-h3{
   margin: 0;
@@ -116,7 +108,7 @@ padding-bottom: 65px;
 p{
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 0.94rem;
 line-height: calc(24/15);
 color: #999999;
 }
@@ -134,20 +126,6 @@ color: #999999;
 .cards:nth-of-type(5) .cards-h3::before{  content: url(../img/icon5.png);}
 .cards:nth-of-type(6) .cards-h3::before{  content: url(../img/icon6.png);}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------------TEAM------------------------- */
 
 .first_h2{
@@ -159,11 +137,11 @@ color: #999999;
   width: 945px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 93px;
+  padding-bottom: 5.8rem;
 }
-.amaz-serveces::after{
+.meet-team::after{
   content: "";
-  margin-bottom: 45px;
+  margin-bottom: 2.81rem;
 }
 /* ------------------------------------------C A R D S--------------------------------- */
 .team-cards{
@@ -176,8 +154,8 @@ color: #999999;
   min-height: 625px;
 }
 
-.title-card h4{
-  font-family: 'Montserrat', sans-serif;
+.name{
+font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -189,7 +167,7 @@ color: #999999;
   padding: 0.62rem;
   
 }
-.title-card span {
+.profession{
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
@@ -203,16 +181,18 @@ color: #999999;
 
 
 .card-img{
+  margin: 0;
+  padding: 0;
   font-size: 0;
   min-width: 380px;
-  min-height: 470px;
+  max-height: 470px;
   background-color: #95e1d3;
 
 }
-
-.card:hover img{
+.card:hover .card-img-item{
    transform: translate(-10px,-10px);
- 
+   transition: 0.2s linear;
+
   }
 
   .card{
@@ -225,6 +205,8 @@ color: #999999;
   height: 470px;
   background: linear-gradient(to bottom, #f38181, #fce38a );
   opacity: 0;
+  transition: 0.2s linear;
+
 }
 
 .card-icon{
@@ -237,6 +219,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 opacity: 0;
+
 }
 
 .card-button{
@@ -246,7 +229,8 @@ opacity: 0;
   background-color: #fce38a;
   border-right: 1px solid #f9bd87;
   background-repeat:no-repeat;
-  background-position: center; 
+  background-position: center;    
+
 
 }
 .card-button:nth-of-type(1){
@@ -272,27 +256,18 @@ opacity: 0;
 }
 
 
-.card-button:hover:nth-of-type(1) {
-  background-color: #95e1d3;
-}
-.card-button:hover:nth-of-type(2) {
-  background-color: #95e1d3;
-}
-.card-button:hover:nth-of-type(3) {
-  background-color: #95e1d3;
-}
-.card-button:hover:nth-of-type(4) {
-  background-color: #95e1d3;
-  cursor: pointer;
-}
 .card-button:hover{
-  cursor: pointer;
+  cursor: pointer; 
+   transition: 0.2s linear;
+   background-color: #95e1d3;
+
 }
 .card:hover .overlay{
   opacity: 0.9;
-  transform: translate(-10px,-10px);
-  }
+  transform: translate(-10px,-10px);  
+   transition: 0.2s linear;
 
+  }
 
   .team-container{
     border-bottom: 1px solid #e5e5e5;
@@ -305,7 +280,6 @@ opacity: 0;
  display: flex;
   min-height: 62px;
   width: 1200px;
-  /* flex-basis: 1200px; */
  justify-content: space-between;
  align-items: center;
   margin: auto;
@@ -346,7 +320,7 @@ opacity: 0;
 
 }
 
-.i1{margin-left: auto;}
+.email{margin-left: auto;}
 
 
 .input-email::placeholder{    /* Firefox, Chrome, Opera */
@@ -355,7 +329,7 @@ opacity: 0;
   font-size: 0.94rem;
   line-height: 1.6;
   font-style: italic;
-  padding-left: 12px;
+  padding-left: 0.75rem;
 }
 
 .input-email:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
@@ -364,7 +338,7 @@ opacity: 0;
   font-size: 0.94rem;
   line-height: 1.6;
   font-style: italic;
-  padding-left: 12px;
+  padding-left: 0.75rem;
 } 
 
 .input-email::-ms-input-placeholder { /* Microsoft Edge */ 
@@ -373,5 +347,5 @@ opacity: 0;
   font-size: 0.94rem;
   line-height: 1.6;
   font-style: italic;
-  padding-left: 12px;
+  padding-left: 0.75rem;
 } 
