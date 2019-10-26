@@ -36,6 +36,8 @@ html{font-size: 16px;}
     font-weight: 400;
     line-height: calc(17/14);
     transition: 0.2s linear;
+    border-bottom: 0.088rem solid #ffffff;
+
    }
 
 
@@ -101,7 +103,7 @@ padding-bottom: 4.06rem;
 .cards-h3{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  line-height: calc(17/14);
+  line-height: 0.75;
   text-transform: uppercase;
   color: #333333;
 }
@@ -111,6 +113,7 @@ p{
   font-size: 0.94rem;
 line-height: calc(24/15);
 color: #999999;
+margin-top: 15px;
 }
 
 .cards-h3::before{
@@ -189,9 +192,9 @@ font-family: 'Montserrat', sans-serif;
   background-color: #95e1d3;
 
 }
+.card-img-item{   transition: 0.2s linear;}
 .card:hover .card-img-item{
    transform: translate(-10px,-10px);
-   transition: 0.2s linear;
 
   }
 
@@ -219,6 +222,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 opacity: 0;
+transition: 0.2s linear;
+
 
 }
 
@@ -230,6 +235,7 @@ opacity: 0;
   border-right: 1px solid #f9bd87;
   background-repeat:no-repeat;
   background-position: center;    
+  transition: 0.2s linear;
 
 
 }
@@ -258,14 +264,12 @@ opacity: 0;
 
 .card-button:hover{
   cursor: pointer; 
-   transition: 0.2s linear;
    background-color: #95e1d3;
 
 }
 .card:hover .overlay{
   opacity: 0.9;
   transform: translate(-10px,-10px);  
-   transition: 0.2s linear;
 
   }
 
@@ -279,6 +283,7 @@ opacity: 0;
 .foot{
  display: flex;
   min-height: 62px;
+  /* flex-basis: 1200px; */
   width: 1200px;
  justify-content: space-between;
  align-items: center;
@@ -310,6 +315,8 @@ opacity: 0;
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.2s linear;
+
 }
 .input-email{
   padding: 0;
@@ -317,12 +324,20 @@ opacity: 0;
   border: 1px solid #e7e7e7;
   height: 38px;
   width: 230px;
-
+  color:#000000;
+  font-size: 20px;
+  padding-left: 5px;
 }
 
 .email{margin-left: auto;}
 
+.email-item-button:hover{
+  background-color: #53d9c0;
+}
 
+.email-item-button:active{
+  background-color: rgb(100, 98, 98);
+}
 .input-email::placeholder{    /* Firefox, Chrome, Opera */
   color:#cccccc;
   font-family: 'Roboto', sans-serif;
