@@ -17,7 +17,6 @@ html{font-size: 16px;}
 .container{
     padding: 0;
     margin: 0;
-    width: 1600px;
     margin: 0 auto;
 }
  /* -------------------------------------------STYLE FOR LOGO----------------------------------- */
@@ -29,6 +28,17 @@ html{font-size: 16px;}
   width: 78px;
   margin-left: 1.875rem;
   margin-top: 2.5rem;
+  animation: logo-appear 1s linear;
+}
+
+@keyframes logo-appear{
+  0%{
+    transform: translateY(-70px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
 }
 
  /*----------------------------------------- STYLE FOR NAVIGATION-------------------------*/
@@ -55,23 +65,24 @@ html{font-size: 16px;}
 
  /* ------------------------------------SLIDERS-CONTAINER------------------------------- */
 .sliders{
-  position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
-  /* width: 1600px; */
-  height: 700px;
+ 
 
 }
 
-.bg-color_for_image{
+.btn-title{
   position: absolute;
   width: 1600px;
+  margin: 0 auto;
   height: 700px;
-  background-color: black;
-z-index: 100;
-opacity: 0.52;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+
 }
+
 
 /* --------------------------------------BUTTONS FOR SLIDERS------------------ */
 .slider-control{
@@ -94,7 +105,7 @@ padding-right: 0.25rem;
 }
 .control-right{
   right:245px;
-  z-index: 100;
+  z-index: 101;
   opacity: 0.65;
 }
 
@@ -128,26 +139,31 @@ padding-right: 0.25rem;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
+
   }
 
 .slider-item{
-  position: relative; 
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: linear-gradient(rgba(0,0,0,0.52),rgba(0,0,0,0.52)), url('../img/slide.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
   }
  
-.slider-img{
-    height: 700px;
-    width: 100%;
-    object-fit: cover;
-  }
+
   /* -------------------------------------title for sliders------------------- */
   .slider-title{
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 40%;
+     padding: 0;
+     top: 50%; 
     z-index: 101;
-    left:26.5%;
+    left:50%;
+    transform: translate(-50%,-50%);
     color:#ffffff;
 
   }
@@ -198,6 +214,8 @@ padding-right: 0.25rem;
 .container_products{
   background-color: #e9f0fd;
   min-height: 676px;
+  width: 1600px;
+  margin: 0 auto;
 
 }
 .container-cards{
@@ -329,7 +347,7 @@ padding-right: 0.25rem;
   position: relative;
   height: 88px;
   background-color: #323232;
-  width: 1600px;
+  /* width: 1600px; */
   margin: auto;
 }
 .footer-info{
