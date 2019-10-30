@@ -138,7 +138,7 @@ flex-basis: 290px;
 }
 p{
   margin: 0;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -209,7 +209,7 @@ flex-wrap: wrap;
 align-content: flex-start;
 
 }
-.name_email{
+.contact-input{
   margin: 0;padding: 0;
   width: 455px;
   display: flex;
@@ -217,14 +217,16 @@ align-content: flex-start;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .name,.emails,.subject{
   height: 53px;
   margin: 0;padding: 0;
-  border: 1px solid #cccccc;
+   border: 1px solid #cccccc;
   font-size: 1.25rem;
-  padding-left: 0.625rem;
+  color:#bbbbbb;
+  box-sizing: border-box;
+  padding:1.25rem; 
   border-radius: 2px;
-
 }
 
 .text{
@@ -235,7 +237,9 @@ align-content: flex-start;
   border: 1px solid #cccccc;
   border-radius: 2px;
   resize: none;
-  
+  color:#bbbbbb;
+  box-sizing: border-box;
+  padding:1.25rem; 
 }
 
 .buttons{
@@ -248,15 +252,14 @@ align-content: flex-start;
     border: 1px solid #efc535;
     padding: 1.56rem 2.70rem;
     text-transform: uppercase; 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
     border-radius:3px; 
 }
 
 /* --------------------------------------------------------- */
-
-          
+         
 .buttons:hover{
   cursor: pointer;
   background-color: #efc535;
@@ -266,46 +269,31 @@ align-content: flex-start;
 }
 ::placeholder{    /* Firefox, Chrome, Opera */
   color:#bbbbbb;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.2;
-  padding-left: 1.44rem;
-  text-transform: uppercase;
-}
-.text::placeholder{
-  padding-top: 1.25rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-  color:#bbbbbb;
-  font-family: 'Montserrat';
+    color:#bbbbbb;
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.2;
-  padding-left: 1.44rem;
-  text-transform: uppercase;
+    font-size: 0.875rem;
+    text-transform: uppercase;
 } 
 
-.contact input[type="email"]:valid{
+.contact input[type="email"]:focus:valid,
+.contact input[name="name"]:focus:valid,
+.contact textarea[name="body"]:focus:valid{
+  transition: border .4s;
   border: 1px solid rgb(0, 255, 0);
 }
-.contact input[type="email"]:invalid{
+.contact input[type="email"]:focus:invalid,
+.contact input[name="name"]:focus:invalid, 
+.contact textarea[name="body"]:focus:invalid{
   border: 1px solid rgb(255, 0, 0);
-}
-
-.contact input[name="insert-name"]:valid {
-  border: 1px solid rgb(0, 255, 0);
-}
-.contact input[name="insert-name"]:invalid {
-  border: 1px solid rgb(255, 0, 0);
-}
-
-.contact textarea[name="text-massage"]:valid {
-  border: 1px solid rgb(0, 255, 0);
-}
-.contact textarea[name="text-massage"]:invalid {
-  border: 1px solid rgb(255, 0, 0);
+  transition: border .4s;
 }
