@@ -92,9 +92,7 @@
     
         
   }
-  .menu-list{
-    margin-top: 27px;
-  }
+ 
   .menu-list-item{
     box-sizing: border-box;
     display: block;
@@ -111,7 +109,9 @@
     text-decoration: none;
     
   }
-  
+  .menu-list{
+    margin-top: 27px;
+  }
   .menu-list-item:hover{
     border: 2px solid #ffffff;
     border-radius: 20px;
@@ -149,33 +149,30 @@
         padding-left:45px;
         padding-right: 45px;
         padding-top: 15px;
+        line-height: 1.2;
       }
 
       .find-partner{
-        margin: 0;
-        padding: 0;
-      width: 278px;
-      height: 38px;
-      background-color: #ff4e50;
-      border: 1px solid #ff4e50;   
-    border-radius: 50px;
-    margin: 0 auto;
-    margin-top: 17px;
-    text-align: center;
-    }
+       text-align: center;  
+       margin-top: 19px;      
+}
 
 .find-partner-item{
+  height: 38px;
+        min-width: 278px;
+        padding: 0;
+      border-radius: 50px;
+      background-color: #ff4e50;
+      border: 1px solid #ff4e50;   
+    text-align: center;
     margin: 0;
-    padding: 0;
-    display: block;
+    display: inline-block;
     color: #ffffff;
-    text-decoration: none;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.2;
-    padding-top: 10px;
+    line-height: 2.7;
 } 
 
 
@@ -297,7 +294,7 @@ picture::after{
   font-size: 14px;
   line-height: 1.2;
   color: #ff4e50;
-  padding: 10px 73px;
+  padding: 10px 70px;
   cursor: pointer;
   margin-bottom: 57px;
 }

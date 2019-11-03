@@ -1,10 +1,99 @@
-@media (min-width:600px) and (max-width:939px){
+@media (min-width:748px){
 .page-container{
-    background-image: none;
+    width: 748px;
+    min-height: 700px;
+    width: 100%;
+
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    
+}
+.menu-list{
+    margin: 0;
+
+    padding-top: 47px;
+}
+
+.page-nav{
+    margin: 0 auto;
+    width: 660px;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+}
+.menu-list-item{
+    padding: 0;
+    line-height: 1.8;
+    
+}
+
+.logo{
+    padding-top: 47px;
+}
+.header-titel{
+    margin: 0;
+    font-size: 52px;
+    padding-top: 138px;
+}
+
+.header-text{
+padding: 0;
+padding-top: 25px;
+font-size: 24px;
+
+}
+.find-partner{
+    margin-top: 32px;
+
+}
+.find-partner-item{
+    min-width: 227px;
+
+}
+.partners{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+    width: 660px;
+     
+  
+  }
+
+  .partners-items{
+      width: 532px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .item{
+    width: 236px;
+    margin: 0; 
+     }
+
+.item:not(:nth-last-child(-n+2)){
+    margin-bottom: 58px;
+}
+
+  .title-partners{
+    padding-top: 68px;
+    margin-bottom: 30px; 
+  }
+
+  .container-other-partners{
+      margin-top: 38px;
+  }
+
+.buton-other-partners{
+    padding: 0;
+    padding: 10px 26px;
+    margin-bottom: 40px;
+
 }
 
 
-
-
-    
 }
