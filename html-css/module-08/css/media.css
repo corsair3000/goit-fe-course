@@ -18,7 +18,7 @@
 .page-nav{
     margin: 0 auto;
     min-height: 115px;
-    width: 660px;
+    max-width: 660px;
 display: flex;
 flex-direction: row-reverse;
 justify-content: space-between;
@@ -51,7 +51,7 @@ font-size: 1.5rem;
 
 }
 .partners{
-    width: 660px;
+    max-width: 660px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -102,10 +102,10 @@ align-items: center;
 @media (min-width:940px){
 
     .page-nav{
-        width: 930px;
+        max-width: 930px;
     }
 .partners{
-    width: 940px;
+    max-width: 940px;
   }
 
 .partners-items{

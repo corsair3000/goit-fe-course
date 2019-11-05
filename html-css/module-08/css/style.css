@@ -109,12 +109,16 @@
   }
   .menu-list{
     margin-top: 1.69rem;    
+    border: 2px solid transparent;
+    border-radius: 20px;
+  }
 
+
+  .menu-list:hover{
+    border-color: #ffffff;
+    
   }
-   .menu-list:last-child{
-         border: 2px solid #ffffff;
-         border-radius: 1.25rem;
-  }
+   
 
 
 .logo,.header-titel{
@@ -177,10 +181,8 @@
 
 .partners{
 
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-
-  
 
 }
 
@@ -278,11 +280,11 @@ picture::after{
   background-color: #4e73db;
 }
 .container-other-partners{
-  width: 320px;
+  max-width: 320px;
   text-align: center;
 }
 .buton-other-partners{
-  
+ 
   background-color: transparent;
   border:2px solid #ff4e50;
   border-radius: 50px;
@@ -295,4 +297,7 @@ picture::after{
   padding: 0.625rem 4.38rem;
   cursor: pointer;
   margin-bottom: 3.56rem;
+}
+.buton-other-partners:active{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
