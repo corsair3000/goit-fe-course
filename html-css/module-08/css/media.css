@@ -102,25 +102,20 @@ align-items: center;
 @media (min-width:940px){
 
     .page-nav{
-        max-width: 930px;
+        max-width: 920px;
     }
 .partners{
-    max-width: 940px;
+    max-width: 920px;
   }
 
 .partners-items{
-       width: 940px;
+    width: 920px;
        justify-content:space-between;
      
 
 }
 .item:not(:nth-last-child(-n+4)){
-    margin-bottom: 58px;
-}
-
-.item:nth-of-type(4n+4)
-{
-    margin-right: 3.63;
+    margin-bottom: 3.62rem;
 }
 
 
@@ -129,6 +124,6 @@ align-items: center;
      }
 
      .buton-other-partners{
-      margin-bottom: 4.56;
+      margin-bottom: 4.56rem;
 }
 }
