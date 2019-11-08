@@ -118,6 +118,7 @@ align-items: center; */
 
 .partners-items{
     width: 920px;
+    /* flex-direction: row-reverse; */
        justify-content:space-between;
      
 
