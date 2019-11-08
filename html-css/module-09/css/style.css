@@ -192,7 +192,10 @@
   /* padding-top: 4.25rem; */
   margin-bottom: 1.125rem; 
 }
-
+.title-partners{
+  padding-top: 4.25rem;
+  margin-bottom: 1.88rem; 
+}
 /* ----------------------------------partners */
 
 .partners-items{

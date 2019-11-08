@@ -4,7 +4,9 @@
     width: 100%;
     
 }
-
+.nav{
+    flex-direction: row-reverse;
+}
 .menu{
     margin: 0;
     padding: 0;
@@ -27,12 +29,6 @@
     padding-top: 44px;
 
 }
-
-.row{
-flex-direction: row-reverse;
-}
-
-
 
 .header-titel{
     margin: 0;
@@ -59,24 +55,16 @@ font-size: 1.5rem;
 
 
 .partners{
-    /* max-width: 660px; */
-/* display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center; */
+   
     
   }
 
   .partners-items{
-      /* width: 532px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; */
+   /* width: 660px;    */
   }
 
   .item{
-    /* width: 236px; */
-    margin: 0; 
+    margin: 0 auto; 
      }
 
 
@@ -107,17 +95,17 @@ align-items: center; */
 
 }
 
-@media (min-width:940px){
+@media (min-width:960px){
 
     .page-nav{
-        max-width: 920px;
+        /* max-width: 920px; */
     }
 .partners{
-    max-width: 920px;
+    /* max-width: 920px; */
   }
 
 .partners-items{
-    width: 920px;
+    /* width: 920px; */
     /* flex-direction: row-reverse; */
        justify-content:space-between;
      
@@ -129,7 +117,7 @@ align-items: center; */
 
 
 .item{
-    width: 220px;
+    /* width: 220px; */
      }
 
      .buton-other-partners{
