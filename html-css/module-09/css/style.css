@@ -207,6 +207,7 @@
   width: 220px;
   position: relative;
   margin-bottom: 1.75rem;
+  text-align: center;
 }
 .part-img{
   margin: 0 auto;
@@ -282,6 +283,7 @@ picture::after{
 .container-other-partners{
   max-width: 320px;
   text-align: center;
+  margin: 0 auto;
 }
 .buton-other-partners{
  

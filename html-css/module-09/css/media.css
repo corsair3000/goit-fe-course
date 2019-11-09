@@ -54,11 +54,12 @@ font-size: 1.5rem;
 
 
 
-.partners{
-   
-    
-  }
 
+  .text-item{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    }
   .partners-items{
    /* width: 660px;    */
   }
@@ -115,8 +116,14 @@ font-size: 1.5rem;
     margin-bottom: 3.62rem;
 }
 
+/* .text-item{
+padding-left: 15px;
+padding-right: 15px;
 
+} */
 .item{
+    text-align: center;
+
     /* width: 220px; */
      }
 
