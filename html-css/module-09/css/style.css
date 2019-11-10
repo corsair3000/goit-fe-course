@@ -203,7 +203,6 @@
   margin: 0;
 }
 .item{
-  margin: 0 auto;
   width: 220px;
   position: relative;
   margin-bottom: 1.75rem;
@@ -254,23 +253,23 @@ picture::after{
   top: 81px;
 }
 
-.item:nth-of-type(n+1) picture::after{
+.bradley::after{
   content:'';
   background-image: url(../img/icons/icon1.png);
   background-color: #ff4e50;
 }
- .item:nth-of-type(n+2) picture::after{
+ .lucas::after{
   content:'';
   background-image: url(../img/icons/icon2.png);
   background-color: #ffa507;
 }
 
-.item:nth-of-type(n+3) picture::after{
+.walker::after{
   content:'';
   background-image: url(../img/icons/icon3.png);
   background-color: #1cd7ad;
 }
-.item:nth-of-type(n+4) picture::after{
+.carson::after{
   content:'';
   background-image: url(../img/icons/icon4.png);
   background-color: #4e73db;
