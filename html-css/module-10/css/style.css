@@ -6,9 +6,9 @@ html {
   outline: none;
 }
 
-.wrap {
+.page-header {
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 2.81rem auto;
   max-width: 100%;
   min-height: 1000px;
   background-repeat: no-repeat;
@@ -16,7 +16,8 @@ html {
   background-position: center;
   background-image: -webkit-gradient(
       linear,
-      left top, left bottom,
+      left top,
+      left bottom,
       from(rgba(243, 129, 129, 0.9)),
       to(rgba(252, 227, 138, 0.9))
     ),
@@ -31,17 +32,15 @@ html {
       rgba(252, 227, 138, 0.9)
     ),
     url("../img/background-min.jpg");
-  margin-bottom: 45px;
 }
 
 .container {
   padding: 0;
-  margin: 0;
   margin: 0 auto;
   width: 1200px;
 }
 /* --------HEADER--------- */
-.logo-navigation {
+.page-nav {
   width: 1200px;
   margin: 0 auto;
 
@@ -51,15 +50,15 @@ html {
 
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   min-height: 80px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.menu {
+.site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,14 +66,14 @@ html {
   margin: 0;
   padding: 0;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style: none;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.menu-list-item {
+.site-navigation__link {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -88,66 +87,69 @@ html {
   border-bottom: 3px solid transparent;
 }
 
-.menu-list-item:hover {
+.site-navigation__link:hover {
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
   padding-bottom: 0.63rem;
 }
-.svg-icon:hover {
+.site-navigation__link--icon:hover {
   fill: #fce38a;
 }
-.svg-icon {
+.site-navigation__link--icon {
   width: 18px;
   height: 18px;
   fill: #ffffff;
 }
 
-.title-first {
+.page-header__title {
   margin: 0;
   font-family: "Kaushan Script", cursive;
   color: #ffffff;
   text-align: center;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 1.2;
-  padding: 150px 0 0 0;
+  padding: 9.38rem 0 0 0;
 }
 
-.titel-second {
+.page-header__main-title {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   text-align: center;
-  font-size: 150px;
+  font-size: 9.38rem;
   line-height: calc(140 / 150);
-  padding: 21px 0 0 0;
+  padding: 1.31rem 0 0 0;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.header__btn {
+.page-header-button {
   text-align: center;
-  padding-top: 112px;
+  padding-top: 7rem;
 }
-.btn {
+.page-header__btn {
   background-color: transparent;
   text-transform: uppercase;
   border: 3px solid #ffffff;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.88rem;
   line-height: 1.2;
   font-weight: 700;
-  padding: 10px 28px;
+  padding: 0.63rem 1.75rem;
   cursor: pointer;
 }
-.btn:active {
+.page-header--active:active {
   background-color: #ffffff;
   -webkit-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
   transition: 0.2s all linear;
 }
 /* ------------------------------------STYLE FOR H2 NEW COLECTION --------------------------*/
-.first_h2 {
+.services {
+  padding-bottom: 1.88rem;
+}
+.container__title {
   margin: 0;
   padding: 0;
   font-family: "Kaushan Script", cursive;
@@ -155,9 +157,8 @@ html {
   text-align: center;
   font-size: 1.5rem;
   line-height: calc(29 / 24);
-  padding-top: 6.25rem;
 }
-.style_h2 {
+.container__name {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -170,7 +171,7 @@ html {
   padding-top: 1.125rem;
 }
 
-.style_h2::after {
+.container__name--underline::after {
   padding: 0;
   margin: 0;
   content: "";
@@ -178,23 +179,23 @@ html {
   width: 3.75rem;
   margin: auto;
   margin-top: 2.44rem;
-  margin-bottom: 4rem;
   border-bottom: 0.19rem solid #f38181;
 }
 
-.servises {
+.features {
+  margin-top: 4rem;
   -ms-flex-preferred-size: 1182px;
-      flex-basis: 1182px;
+  flex-basis: 1182px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-.cards {
+.features-item {
   position: relative;
   min-height: 65px;
   width: 380px;
@@ -203,71 +204,63 @@ html {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-.cards-h3 {
+.features-item__title {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   line-height: 0.75;
   text-transform: uppercase;
   color: #333333;
 }
-p {
+.features-item__text {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
   line-height: calc(24 / 15);
   color: #999999;
-  margin-top: 15px;
+  margin-top: 0.94rem;
 }
 
-.card-title {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 79%;
-          flex: 0 0 79%;
-}
-.card-svg-icon {
+.features-item__icon {
   width: 32px;
   height: 32px;
   fill: #95e1d3;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 21%;
+  flex: 0 0 21%;
 }
 
 /* --------------------------------TEAM------------------------- */
 
-.first_h2 {
-  margin: 0;
-  padding: 0;
-}
-.describe-team {
+.team__describe {
   display: block;
   width: 945px;
   text-align: center;
   margin: 0 auto;
+  margin-top: 2.81rem;
   padding-bottom: 5.8rem;
 }
-.meet-team::after {
-  content: "";
-  margin-bottom: 2.81rem;
-}
+
 /* ------------------------------------------C A R D S--------------------------------- */
-.team-cards {
+.team-list {
   margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-preferred-size: 1200px;
-      flex-basis: 1200px;
+  flex-basis: 1200px;
   min-height: 625px;
 }
 
-.name {
+.photo__name {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
@@ -279,7 +272,7 @@ p {
   padding-top: 1.81rem;
   padding: 0.62rem;
 }
-.profession {
+.photo__occupation {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -291,7 +284,7 @@ p {
   color: #999999;
 }
 
-.card-img {
+.photo {
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -299,27 +292,35 @@ p {
   max-height: 470px;
   background-color: #95e1d3;
 }
-.card-img-item {
+.photo__img {
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
-.card:hover .card-img-item {
+.team-list-item:hover .photo__img {
   -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
-.card {
+.team-list-item {
   position: relative;
 }
-.overlay {
+.team__overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 380px;
   height: 470px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
+}
+.team__overlay--gradient {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f38181),
+    to(#fce38a)
+  );
   background: -o-linear-gradient(top, #f38181, #fce38a);
   background: linear-gradient(to bottom, #f38181, #fce38a);
   opacity: 0;
@@ -328,7 +329,7 @@ p {
   transition: 0.2s linear;
 }
 
-.card-icon {
+.socials {
   width: 380px;
   height: 470px;
   position: absolute;
@@ -338,18 +339,18 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   opacity: 0;
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
-.card-button {
+.socials__item {
   width: 55px;
   height: 55px;
   border: none;
@@ -359,11 +360,11 @@ p {
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
 }
-.card-button:last-of-type {
+.socials__item:last-of-type {
   border: none;
 }
 
-.btn__svg-icon {
+.socials__icon {
   width: 32px;
   height: 32px;
   fill: #f38181;
@@ -372,64 +373,64 @@ p {
   transition: 0.3s linear;
 }
 
-.card:hover .card-icon {
+.team-list-item:hover .socials {
   opacity: 1;
   -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
-.card-button:hover .btn__svg-icon {
+.socials__item:hover .socials__icon {
   fill: #ffffff;
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-.card-button:hover {
+.socials__item--color:hover {
   cursor: pointer;
   background-color: #f38181;
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
 }
-.card:hover .overlay {
+.team-list-item:hover .team__overlay--gradient {
   opacity: 0.9;
   -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
-.team-container {
+.team {
   border-bottom: 1px solid #e5e5e5;
 }
 
 /* -------------------------------footer-------------------------- */
-.foot {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 62px;
   width: 1200px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: auto;
 }
 
-.footer-info {
+.footer__info {
   font-family: "Montserrat", sans-serif;
   color: #333333;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.2;
 }
-#som {
+#footer-info--color {
   color: #f38181;
 }
-.email-item-button {
+.footer-email__btn {
   margin: 0;
   padding: 0;
   width: 150px;
@@ -447,29 +448,29 @@ p {
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
-.input-email {
+.footer-email__input {
   padding: 0;
   margin: 0;
   border: 1px solid #e7e7e7;
   height: 38px;
   width: 230px;
   color: #000000;
-  font-size: 20px;
-  padding-left: 5px;
+  font-size: 1.25rem;
+  padding-left: 0.31;
 }
 
-.email {
-  margin-left: auto;
+.footer-email {
+  display: flex;
 }
 
-.email-item-button:hover {
+.footer-email__btn--color:hover {
   background-color: #53d9c0;
 }
 
-.email-item-button:active {
+.footer-email__btn--color:active {
   background-color: rgb(100, 98, 98);
 }
-.input-email::-webkit-input-placeholder {
+.footer-email__input::-webkit-input-placeholder {
   color: #cccccc;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
@@ -477,7 +478,7 @@ p {
   font-style: italic;
   padding-left: 0.75rem;
 }
-.input-email::-moz-placeholder {
+.footer-email__input::-moz-placeholder {
   color: #cccccc;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
@@ -485,7 +486,7 @@ p {
   font-style: italic;
   padding-left: 0.75rem;
 }
-.input-email:-ms-input-placeholder {
+.footer-email__input:-ms-input-placeholder {
   color: #cccccc;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
@@ -493,7 +494,7 @@ p {
   font-style: italic;
   padding-left: 0.75rem;
 }
-.input-email::-ms-input-placeholder {
+.footer-email__input::-ms-input-placeholder {
   color: #cccccc;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
@@ -501,7 +502,7 @@ p {
   font-style: italic;
   padding-left: 0.75rem;
 }
-.input-email::placeholder {
+.footer-email__input::placeholder {
   color: #cccccc;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
@@ -510,12 +511,15 @@ p {
   padding-left: 0.75rem;
 }
 
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .wrap {
     background-image: -webkit-gradient(
         linear,
-        left top, left bottom,
+        left top,
+        left bottom,
         from(rgba(243, 129, 129, 0.9)),
         to(rgba(252, 227, 138, 0.9))
       ),
