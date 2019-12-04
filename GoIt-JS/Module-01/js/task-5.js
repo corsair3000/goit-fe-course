@@ -1,44 +1,44 @@
 'use strict';
-
 let nameCountry;
 let credits = [100, 250, 170, 80, 120];
+const CHINA = 'китай';
+const CHILY = 'чилі';
+const AUSTRALIA = 'австралія';
+const INDIA = 'індія';
+const JAMAICA = 'ямайка';
+let price = 0;
 
 nameCountry = prompt('В яку країну бажаєте доставку?');
 if (!nameCountry) console.log('Canceled by user');
 else {
   nameCountry = nameCountry.toLowerCase();
   switch (nameCountry) {
-    case 'китай':
-      console.log(
-        `Доставка в ${nameCountry} буде коштувати ${credits[0]} кредитів`,
-      );
+    case CHINA:
+      price = credits[0];
       break;
 
-    case 'чілі':
-      console.log(
-        `Доставка в ${nameCountry} буде коштувати ${credits[1]} кредитів`,
-      );
+    case CHILY:
+      price = credits[1];
       break;
 
-    case 'австралія':
-      console.log(
-        `Доставка в ${nameCountry} буде коштувати ${credits[2]} кредитів`,
-      );
+    case AUSTRALIA:
+      price = credits[2];
       break;
 
-    case 'індія':
-      console.log(
-        `Доставка в ${nameCountry} буде коштувати ${credits[3]} кредитів`,
-      );
+    case INDIA:
+      price = credits[3];
       break;
 
-    case 'ямайка':
-      console.log(
-        `Доставка в ${nameCountry} буде коштувати ${credits[4]} кредитів`,
-      );
+    case JAMAICA:
+      price = credits[4];
       break;
 
     default:
       console.log('В вашей стране доставка не доступна');
   }
+}
+
+if (price > 0) {
+  let message = `Доставка в ${nameCountry} будет стоить ${price} кредитов`;
+  console.log(message);
 }
