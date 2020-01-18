@@ -1,0 +1,76 @@
+.services
+   {
+    @extend %container;
+    padding-bottom: 1.88rem;
+   }
+
+    .services__title {
+
+      @extend %reset;
+      
+      font-family: $title-font;
+      color: $primary-dark-color;
+      @include font-settings(1.5rem, 1.2);
+          
+    }
+    
+    .services__name {
+  
+      @extend %reset;
+    font-family: $main-font;
+    color: $primary-dark-color;
+    
+    text-transform: uppercase;
+    @include font-settings(1.88rem, 1.2, 700);
+    padding-top: 1.125rem;
+    
+      &--underline::after {
+      padding: 0;
+      margin: 2.44rem auto 0 auto;
+      @include pseudo(block, '');
+      width: 3.75rem;
+      border-bottom: 0.19rem solid $secondary-color;
+    }
+  }
+  
+  
+    
+  .features {
+    margin-top: 4rem;
+    flex-basis: 1182px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features-item {
+    position: relative;
+    min-height: 65px;
+    width: 380px;
+    padding-bottom: 4.06rem;
+    display: flex;
+    justify-content: space-around;
+  
+  
+    &__title {
+      margin: 0;
+      font-family: $main-font;
+      @include font-settings(0.94rem, 1, 600);
+      text-transform: uppercase;
+      color: $primary-dark-color;
+     }
+
+    &__text {
+      margin: 0.94rem 0 0 0 ;
+      font-family: $text-font;
+      @include font-settings(0.94rem, 1.6);
+      color: $text-color;
+    }
+
+    &__icon {
+    width: 32px;
+    height: 32px;
+    fill: $bg-and_icon-color;
+    flex: 0 0 21%;
+  }
+  }
