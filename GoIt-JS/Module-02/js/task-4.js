@@ -7,6 +7,4 @@ const formatString = function(string) {
     return `${string.slice(0, 40)}...`;
   }
 };
-console.log(
-  formatString('Curabitur lig, tincidunt non11ffffffffffffffff2345612'),
-);
+console.log(formatString('Curabitur lig, tincidunt non11ffffffffffffffff2345612'));

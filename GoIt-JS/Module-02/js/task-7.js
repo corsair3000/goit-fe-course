@@ -23,7 +23,7 @@ const isLoginUnique = function(ourLogins, inputLogin) {
 };
 
 const addLogin = function(logins, log) {
-  if (log === null) return console.log('Canceled of user');
+  if (log === null) return console.log('Canceled by user');
   if (isLoginValid()) {
     if (isLoginUnique(logins, login)) {
       return logins.push(log);

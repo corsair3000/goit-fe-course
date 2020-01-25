@@ -4,17 +4,27 @@ let total = 0;
 const summ = () => {
   let input;
   const numbers = [];
-  let i = 0;
-  for (i = 0; input !== null; i += 1) {
-    input = prompt('Input some numbers:');
-    if (!input) break;
-    if (isNaN(input)) {
-      i = i - 1;
+
+  for (let i = 0; input !== null; i++) {
+    input = prompt('введіть число');
+    if (input === '') {
+      i--;
+      alert('Щоб вивести результат натисніть "Cкасувати"');
       continue;
     }
-    numbers[i] = Number(input);
-    total += numbers[i];
+
+    if (isNaN(input)) {
+      i = i - 1;
+      alert('Ведіть тільки цифри');
+      continue;
+    }
+    if (input === null) continue;
+    else {
+      numbers[i] = Number(input);
+      total += numbers[i];
+    }
   }
+
   return total;
 };
 
