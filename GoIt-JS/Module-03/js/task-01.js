@@ -1,7 +1,7 @@
 'use strict';
 
 const user = {
-  name: 'Alex',
+  name: 'Mango',
   age: 32,
   hobby: 'js',
   premium: true,
@@ -9,6 +9,8 @@ const user = {
 user.mood = 'happy';
 user.hobby = 'skiing';
 user.premium = false;
+
 Object.keys(user).forEach(key => {
   console.table(`${key}: ${user[key]}`);
 });
+

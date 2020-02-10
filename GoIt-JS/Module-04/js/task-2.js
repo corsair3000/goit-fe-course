@@ -18,6 +18,7 @@ const invokeInventoryAction = function(itemName, action) {
   action(itemName);
 };
 
+console.log(`Items before change: ${inventory.items}`);
 invokeInventoryAction('Medkit', inventory.add.bind(inventory));
 // Invoking action on Medkit
 // Adding Medkit to inventory
