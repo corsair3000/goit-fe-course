@@ -61,18 +61,24 @@ const getSortedUniqueSkills = users => {
     }, [])
     .sort();
   console.log(arrayListScills);
+  const newList = [];
+  arrayListScills.forEach(el => {
+    if (!newList.includes(el)) newList.push(el);
+  });
 
-  const copyArr = arrayListScills.slice();
-  let k;
-  for (let i = 0; i <= arrayListScills.length; i++) {
-    k = 0;
-    for (let j = 0; j <= arrayListScills.length; j++)
-      if (copyArr[j] === arrayListScills[i]) {
-        k++;
-        if (k > 1) copyArr.splice(j, 1);
-      }
-  }
-  return copyArr;
+  return newList;
 };
 
 console.log(getSortedUniqueSkills(users));
+////  П Е Р Е Б О Р    М А С И В У    НА     У Н І К А Л Ь Н І С Т Ь
+// const copyArr = arrayListScills.slice();
+// let k;
+// for (let i = 0; i <= arrayListScills.length; i++) {
+//   k = 0;
+//   for (let j = 0; j <= arrayListScills.length; j++)
+//     if (copyArr[j] === arrayListScills[i]) {
+//       k++;
+//       if (k > 1) copyArr.splice(j, 1);
+//     }
+// }
+// return copyArr;
