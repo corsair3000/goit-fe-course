@@ -54,23 +54,13 @@ console.log(getNamesSortedByFriendsCount(users));
 
 //task10-----------
 const getSortedUniqueSkills = users => {
-  const arrayListScills = users
-    .reduce((acc, user) => {
-      acc.push(...user.skills);
-      return acc;
-    }, [])
-    .sort();
-  console.log(arrayListScills);
-  const newList = [];
-  arrayListScills.forEach(el => {
-    if (!newList.includes(el)) newList.push(el);
-  });
-
-  return newList;
+  const arrayListScills = users.reduce((acc, user) => {acc.push(...user.skills);return acc;}, []).sort();
+  return [...new Set(arrayListScills)];
 };
-
 console.log(getSortedUniqueSkills(users));
-////  П Е Р Е Б О Р    М А С И В У    НА     У Н І К А Л Ь Н І С Т Ь
+
+
+////  П Е Р Е Б О Р    М А С И В У    НА     У Н І К А Л Ь Н І С Т Ь  2 - ВАРІАНТ
 // const copyArr = arrayListScills.slice();
 // let k;
 // for (let i = 0; i <= arrayListScills.length; i++) {
@@ -82,3 +72,10 @@ console.log(getSortedUniqueSkills(users));
 //     }
 // }
 // return copyArr;
+
+////  П Е Р Е Б О Р    М А С И В У    НА     У Н І К А Л Ь Н І С Т Ь  3 - ВАРІАНТ
+// const newList = [];
+//   arrayListScills.forEach(el => {
+//     if (!newList.includes(el)) newList.push(el);
+//   });
+// return newList;
