@@ -1,0 +1,78 @@
+.section {
+  text-align: center;
+  width: 100%;
+}
+#categories {
+  text-align: left;
+}
+.list {
+  font-size: 35px;
+  list-style: none;
+  margin-top: 100px;
+  text-align: center;
+}
+.list__item {
+  color: brown;
+  font-size: 20px;
+}
+.list-gallery {
+  padding: 25px;
+  width: 490px;
+  display: grid;
+  list-style: none;
+  grid-template-columns: min-content min-content;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  margin: 0 auto;
+  border: 2px solid #f30909;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.containerBtn {
+  text-align: center;
+}
+
+.button {
+  margin: 25px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #777777;
+  font-size: 20px;
+  color: white;
+  line-height: 1;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+.button:active {
+  background-color: #aca7a7;
+}
+.button:focus {
+  outline: none;
+}
+.value-counter {
+  display: inline-block;
+  width: 30px;
+  color: black;
+  font-size: 25px;
+}
+
+/* for task 6 */
+#validation-input,
+#name-input {
+  border: 3px solid #bdbdbd;
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  left: 50%;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
