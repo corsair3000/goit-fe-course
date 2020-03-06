@@ -4,44 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HOME-Work_7</title>
+    <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./style.css" />
+    <title>HOME-Work_7</title>
   </head>
   <body>
     <section class="section">
       <!-- ------------1  task--------------- -->
-      <ul id="categories">
-        <li class="item">
-          <h2>Животные</h2>
+      <div class="wrap-categories">
+        <ul id="categories">
+          <li class="item">
+            <h2>Животные</h2>
 
-          <ul>
-            <li>Кот</li>
-            <li>Хомяк</li>
-            <li>Лошадь</li>
-            <li>Попугай</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Продукты</h2>
+            <ul>
+              <li>Кот</li>
+              <li>Хомяк</li>
+              <li>Лошадь</li>
+              <li>Попугай</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Продукты</h2>
 
-          <ul>
-            <li>Хлеб</li>
-            <li>Петрушка</li>
-            <li>Творог</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Технологии</h2>
+            <ul>
+              <li>Хлеб</li>
+              <li>Петрушка</li>
+              <li>Творог</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Технологии</h2>
 
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node</li>
-          </ul>
-        </li>
-      </ul>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <!-- 3 task -->
       <ul id="ingredients"></ul>
       <ul id="gallery"></ul>
@@ -64,10 +67,19 @@
 
       <!-- ---------------------------7task ------------------>
       <br />
-    <input id="font-size-control" type="range" />
-    <br />
-    <span id="text">Абракадабра!</span>
+      <input id="font-size-control" type="range" />
+      <br />
+      <span id="text">Абракадабра!</span>
+      <!-- ------------------8 task--------- -->
+      <div id="controls">
+        <input type="number" min="0" max="100" step="1" />
+        <button type="button" data-action="render">Create</button>
+        <button type="button" data-action="destroy">Destroy</button>
+      </div>
+
+      <div id="boxes"></div>
     </section>
+    <!-- -------------------------------- -->
 
     <script src="js/task-01.js" type="module"></script>
     <script src="js/task-02.js" type="module"></script>
@@ -76,6 +88,6 @@
     <script src="js/task-05.js" type="module"></script>
     <script src="js/task-06.js" type="module"></script>
     <script src="js/task-07.js" type="module"></script>
-
+    <script src="js/task-08.js" type="module"></script>
   </body>
 </html>

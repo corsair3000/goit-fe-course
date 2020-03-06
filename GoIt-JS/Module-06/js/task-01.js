@@ -7,7 +7,7 @@ const getUserNames = users => users.map(user => user.name);
 console.log(getUserNames(users));
 
 // Task 2---------
-const getUsersWithEyeColor = (users, color) => users.filter(user => user.eyeColor == color);
+const getUsersWithEyeColor = (users, color) => users.filter(user => user.eyeColor === color);
 console.log(getUsersWithEyeColor(users, 'blue'));
 
 // Task 3---------
