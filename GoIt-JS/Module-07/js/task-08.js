@@ -26,7 +26,10 @@ function crateBoxes() {
 
   for (let i = 0; i < amount; i++) {
     let crateHexCode = Math.random();
-    let backGroundColor = `background-color:#${String(crateHexCode).slice(2,8)}`;
+    let backGroundColor = `background-color:#${String(crateHexCode).slice(
+      2,
+      8,
+    )}`;
     let sizeBox = `width:${(widthAndHeightBoxes += 10)}px;height:${widthAndHeightBoxes}px`;
     const crateOneBox = `<div class="div1" style="${backGroundColor};${sizeBox}"></div>`;
     containerBoxes.insertAdjacentHTML('beforeend', crateOneBox);
