@@ -13,7 +13,10 @@ const Theme = {
 crateMenu(menuList);
 
 const curentTheme = localStorage.getItem('theme');
-curentTheme === Theme.LIGHT ? lightTheme() : darkTheme();
+console.log(curentTheme);
+curentTheme === Theme.LIGHT || curentTheme === null
+  ? lightTheme()
+  : darkTheme();
 
 btnSwitchTheme.addEventListener('change', setTheme);
 
