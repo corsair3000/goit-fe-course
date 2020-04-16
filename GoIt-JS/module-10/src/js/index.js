@@ -1,6 +1,6 @@
 import menuList from '../data/menu.json';
-import './css/style.css';
-import menuItemTemplate from './templates/menu-template.hbs';
+import '../css/style.css';
+import menuItemTemplate from '../templates/menu-template.hbs';
 //-----------//
 const btnSwitchTheme = document.querySelector('.js-switch-input');
 const body = document.querySelector('.js-body');
